@@ -89,7 +89,7 @@
   .hero {
     &__img {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/images/hero/hero-tablet.jpg');
+        url('../images/hero/hero-tablet.jpg');
     }
   }
   .about-us {
@@ -212,7 +212,7 @@
       height: 600px;
       max-width: 1600px;
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/images/hero/hero-desktop.jpg');
+        url('../images/hero/hero-desktop.jpg');
     }
     &__text {
       max-width: 696px;
@@ -338,7 +338,7 @@
   .hero {
     &__img {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/images/hero/hero-mobile-2x.jpg');
+        url('../images/hero/hero-mobile-2x.jpg');
     }
   }
 }
@@ -348,7 +348,7 @@
   .hero {
     &__img {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/images/hero/hero-tablet-2x.jpg');
+        url('../images/hero/hero-tablet-2x.jpg');
     }
   }
 }
@@ -358,7 +358,7 @@
   .hero {
     &__img {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/images/hero/hero-desktop-2x.jpg');
+        url('../images/hero/hero-desktop-2x.jpg');
     }
   }
 }

@@ -4,7 +4,7 @@
     width: 100%;
     height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('./images/hero/hero-mobile.jpg');
+      url('../images/hero/hero-mobile.jpg');
 
     @include bg-img-position;
   }
