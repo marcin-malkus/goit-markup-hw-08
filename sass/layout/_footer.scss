@@ -1,0 +1,44 @@
+.footer {
+  background-color: $footer-bg-color;
+  &__boxes {
+    padding: 60px 0;
+    text-align: center;
+  }
+  &__box-address {
+    color: $white-color;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    display: flex;
+    flex-direction: column;
+    & p {
+      padding-top: 20px;
+    }
+    &-link {
+      padding-top: 16px;
+      color: $main-footer-color;
+      transition: color $main-transition;
+      &:hover,
+      &:focus {
+        color: $main-color;
+      }
+    }
+  }
+
+  &__header {
+    padding-top: 60px;
+    color: $white-color;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &__box-middle {
+    width: 216px;
+    margin: 0 auto;
+  }
+  &__social-icon-wrapper {
+    display: flex;
+    padding-top: 20px;
+  }
+}

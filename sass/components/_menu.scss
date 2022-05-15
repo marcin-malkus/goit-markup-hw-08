@@ -1,0 +1,80 @@
+.menu {
+  display: none;
+  width: 100vw;
+  height: auto;
+  background-color: $white-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.02em;
+  z-index: 100;
+  &__close {
+    position: absolute;
+    top: 21px;
+    right: 26px;
+    width: 40px;
+    height: 40px;
+    &:hover &-icon,
+    &:focus &-icon {
+      fill: $main-color;
+    }
+    &-icon {
+      width: 20px;
+      height: 20px;
+      fill: $dark-text-color;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: fill $main-transition;
+    }
+  }
+  &__list {
+    margin-left: 40px;
+    margin-top: 50px;
+    font-weight: 500;
+  }
+  &__nav {
+    font-size: 40px;
+
+    &-item {
+      margin-bottom: 40px;
+    }
+  }
+  &__link {
+    color: $dark-text-color;
+
+    transition: color $main-transition;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  &__address-box {
+    margin-top: 150px;
+    &-item {
+      margin-bottom: 35px;
+    }
+    &-tel {
+      font-size: 30px;
+      color: $main-color;
+    }
+    &-mail {
+      font-size: 24px;
+      color: $grey-color;
+    }
+  }
+  &__social {
+    display: flex;
+    margin-bottom: 50px;
+
+    flex-wrap: wrap;
+    &-item {
+      margin-top: 30px;
+    }
+    &-link {
+      color: $main-color;
+      margin-right: 10px;
+      font-size: 18px;
+    }
+  }
+}

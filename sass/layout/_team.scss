@@ -1,0 +1,40 @@
+.team {
+  background-color: $light-bg-color;
+  &__card {
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: $white-color;
+    box-shadow: $team-card-shadow;
+    border-radius: 0px 0px 4px 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &-text {
+      padding-top: 30px;
+      padding-bottom: 24px;
+      margin: 0 auto;
+      text-align: center;
+      width: 216px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    h5 {
+      margin-bottom: 10px;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.03em;
+    }
+    p {
+      font-size: 16px;
+      letter-spacing: 0.03em;
+      color: $grey-color;
+    }
+  }
+  &__social-icon-wrapper {
+    display: flex;
+    margin-top: 16px;
+  }
+}

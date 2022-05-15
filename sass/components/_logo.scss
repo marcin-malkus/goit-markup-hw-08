@@ -1,0 +1,15 @@
+.logo {
+  font-family: $second-font;
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+}
+.logo__item {
+  color: $main-color;
+}
+.logo--dark {
+  color: $dark-text-color;
+}
+.logo--light {
+  color: $white-color;
+}

@@ -1,0 +1,24 @@
+.btn {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+}
+
+.btn--main {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $main-color;
+  box-shadow: $btn-shadow;
+  color: $white-color;
+}
+.btn--filter {
+  padding: 6px 22px;
+  background-color: $light-bg-color;
+  color: $dark-text-color;
+  letter-spacing: 0.03em;
+}

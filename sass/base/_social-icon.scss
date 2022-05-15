@@ -1,0 +1,42 @@
+.social-icon {
+  width: 20px;
+  height: 20px;
+  transition: fill $main-transition;
+}
+.social-icon--dark {
+  fill: $social-icon-color;
+}
+.social-icon--light {
+  fill: $white-color;
+}
+
+.circle-icon {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color $main-transition;
+}
+.circle-icon:hover,
+.circle-icon:focus {
+  background-color: $main-color;
+}
+.circle-icon:hover .social-icon,
+.circle-icon:focus .social-icon {
+  fill: $white-color;
+}
+.circle-icon--dark {
+  background-color: $circle-dark-color;
+}
+
+.social-line::after {
+  content: '';
+  height: 22px;
+  width: 1px;
+  border: 1px solid $social-line;
+  margin-left: 10px;
+}

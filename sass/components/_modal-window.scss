@@ -1,0 +1,150 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.animated-modal {
+  animation: animateModal 0.5s;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  background-color: $white-color;
+  box-shadow: $modal-window-shadow;
+  border-radius: 4px;
+  &__close-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    background: $white-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    &-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__box {
+    padding: 40px;
+    &-heading {
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: $dark-text-color;
+    }
+  }
+
+  &__form {
+    position: relative;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: $grey-color;
+    &-label {
+      margin: 10px 0 4px;
+    }
+    &-input {
+      height: 40px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      background-repeat: no-repeat;
+      background-position: 15px 14px;
+      padding-left: 42px;
+      color: $dark-text-color;
+      font-size: 12px;
+      transition: outline $main-transition, box-shadow $main-transition;
+    }
+    &-input:focus {
+      outline: 1px solid $main-color;
+      box-shadow: $modal-window-shadow;
+    }
+    &-textarea {
+      padding: 12px 16px;
+      resize: none;
+      height: 120px;
+      line-height: 14px;
+    }
+    &-textarea::placeholder {
+      color: rgba(117, 117, 117, 0.5);
+    }
+    &-btn {
+      margin: 30px auto 0;
+      width: 200px;
+      height: 50px;
+    }
+  }
+  &__policy-declaration {
+    margin-left: 24px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: $grey-color;
+    a {
+      color: $main-color;
+      text-decoration: underline;
+    }
+    &::before {
+      position: absolute;
+      left: 0;
+      content: '';
+      width: 16px;
+      height: 15px;
+      outline: 1px solid $dark-text-color;
+      border-radius: 2px;
+      transition: outline $main-transition, background-color $main-transition;
+    }
+  }
+  &__policy-box {
+    position: relative;
+    padding-top: 25px;
+  }
+  &__checkbox-policy_declaration:checked + &__policy-declaration::before {
+    background-color: $main-color;
+    outline: none;
+    background-image: url('../images/modal-check.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &__checkbox-policy_declaration:focus + &__policy-declaration::before {
+    outline: 1px solid $main-color;
+  }
+}
+
+.user-name-icon {
+  background-image: url('../images/modal-person-black.svg');
+}
+.user-name-icon:focus {
+  background-image: url('../images/modal-person-blue.svg');
+}
+
+.tel-icon {
+  background-image: url('../images/modal-phone-black.svg');
+}
+.tel-icon:focus {
+  background-image: url('../images/modal-phone-blue.svg');
+}
+.email-icon {
+  background-image: url('../images/modal-email-black.svg');
+}
+.email-icon:focus {
+  background-image: url('../images/modal-email-blue.svg');
+}

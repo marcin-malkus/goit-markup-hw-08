@@ -1,0 +1,29 @@
+.navigation {
+  border-bottom: 1px solid $border-color;
+  background-color: $white-color;
+  height: 60px;
+  &__wrapper {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__items {
+    display: none;
+  }
+  &__burger {
+    padding: 12px 8px;
+    border: none;
+    background-color: transparent;
+    transition: fill $main-transition;
+    &-icon {
+      fill: $dark-text-color;
+      width: 24px;
+      height: 16px;
+    }
+    &:hover &-icon,
+    &:focus &-icon {
+      fill: $main-color;
+    }
+  }
+}

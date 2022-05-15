@@ -1,0 +1,29 @@
+.hero {
+  &__img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-image.png');
+    @include bg-img-position;
+  }
+  &__text {
+    text-align: center;
+    color: $white-color;
+    max-width: 365px;
+    margin: 0 auto;
+    padding-top: 118px;
+    h1 {
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 26px;
+      letter-spacing: 0.06em;
+      line-height: 162%;
+    }
+  }
+  &__btn {
+    margin-top: 30px;
+    padding: 0 42px;
+    height: 50px;
+  }
+}
